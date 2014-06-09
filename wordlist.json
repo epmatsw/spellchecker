@@ -6348,10 +6348,6 @@
     "Correct":"explain"
   },
   {
-    "Wrong":"expalnation",
-    "Correct":"explanation"
-  },
-  {
     "Wrong":"expatriot",
     "Correct":"expatriate"
   },
@@ -15214,6 +15210,34 @@
   {
     "Wrong":"syncronization",
     "Correct":"synchronization"
+  },
+  {
+    "Wrong":"syncronize",
+    "Correct":"synchronize"
+  },
+  {
+    "Wrong":"syncronous",
+    "Correct":"synchronous"
+  },
+  {
+    "Wrong":"asyncronus",
+    "Correct":"asynchronous"
+  },
+  {
+    "Wrong":"syncronus",
+    "Correct":"synchronous"
+  },
+  {
+    "Wrong":"asynchronus",
+    "Correct":"asynchronous"
+  },
+  {
+    "Wrong":"synchronus",
+    "Correct":"synchronous"
+  },
+  {
+    "Wrong":"asyncronous",
+    "Correct":"asynchronous"
   },
   {
     "Wrong":"synonomous",
