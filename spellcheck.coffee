@@ -36,4 +36,4 @@ fs.readFile path, (err, data)->
       console.log "Found '#{word.Wrong}' #{added} times. Should be '#{word.Correct}'"
     count += added
 #  console.log("#{path} has #{count} misspellings at a #{count / wc} ratio")
-  console.log "#{path},#{count},#{count/wc}"
+  if count > 0 then console.log "#{path},#{count},#{count/wc}"
