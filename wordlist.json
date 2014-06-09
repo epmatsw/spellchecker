@@ -6348,6 +6348,10 @@
     "Correct":"explain"
   },
   {
+    "Wrong":"expalnation",
+    "Correct":"explanation"
+  },
+  {
     "Wrong":"expatriot",
     "Correct":"expatriate"
   },
