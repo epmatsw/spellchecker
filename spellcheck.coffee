@@ -10,12 +10,14 @@ path = "#{dir}/#{process.argv[2]}"
 if process.argv[2].indexOf('./.')==0 then return
 if process.argv[2].indexOf("node_modules")>-1 then return
 if process.argv[2].indexOf("output.csv")>-1 then return
+if process.argv[2].indexOf("wordlist.json")>-1 then return
 
 fs.readFile path, (err, data)->
   if err then throw err
-  sdata = data.toString().toLowerCase()
+  sdata = data.toString()
   wcRegex1 = /['";:,.?¿\-!¡]+/g
   wcRegex2 = /\S+/g
+  sNewData = sdata
 
   for word in list
     word.Regex = new RegExp " #{word.Wrong} ", 'g'
@@ -25,15 +27,19 @@ fs.readFile path, (err, data)->
   for word in list
     added = (sdata.match(word.Regex) or []).length
     correct = word.Correct.split('-')
-    for i in [0..correct.length-1]
-      c = correct[i]
-      creg = new RegExp(c, 'g')
-      if added and word.Correct.match(new RegExp word.Wrong, 'g')
+    willOverlap = added and word.Correct.match(new RegExp word.Wrong, 'g')
+    if willOverlap
+      for i in [0..correct.length-1]
+        c = correct[i]
+        creg = new RegExp(c, 'g')
         overlap = (sdata.match(creg) or []).length
         added -= overlap
+    else if correct.length is 1
+      sNewData = sNewData.replace word.Regex, " #{word.Correct} "
     if added < 0 then added = 0
     if process.argv[3] and added > 0
       console.log "Found '#{word.Wrong}' #{added} times. Should be '#{word.Correct}'"
     count += added
 #  console.log("#{path} has #{count} misspellings at a #{count / wc} ratio")
   if count > 0 then console.log "#{path},#{count},#{count/wc}"
+  if sNewData isnt sdata then fs.writeFile(path, sNewData)
