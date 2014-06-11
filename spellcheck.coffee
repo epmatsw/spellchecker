@@ -1,17 +1,18 @@
+gfs = require 'graceful-fs'
 fs = require 'fs'
 
 list = require './wordlist.json'
 
 config = require './scconfig.json'
 
-space = if config.space then '' else ' '
+space = if config.space then ' ' else ''
 output = config.output
 write = config.write
 localeRegex = if config.skipLocaleRegex then new RegExp('[a-z][a-z]-[A-Z][A-Z]', 'g') else null
 
 for word in list
   word.Regex = new RegExp "#{space}#{word.Wrong}#{space}", 'g'
-  word.Output = "Found '#{word.Wrong}'. Should be '#{word.Correct}'"
+  word.Output = "'#{word.Wrong}' should be '#{word.Correct}'"
   word.Single = word.Correct.indexOf('-') is -1
   word.CorrectFull = "#{space}#{word.Correct}#{space}"
 
@@ -25,6 +26,7 @@ process.argv.forEach (val, index, array)->
   if lpath.indexOf("output.csv") > -1 then done = true
   if lpath.indexOf("wordlist.json") > -1 then done = true
   if lpath.indexOf("spellcheck.js") > -1 then done = true
+  if lpath.indexOf("scconfig.json") > -1 then done = true
   if config.skipLocale
     if lpath.indexOf('local') > -1
       done = true
@@ -35,21 +37,20 @@ process.argv.forEach (val, index, array)->
     else if config.skipLocaleRegex and lpath.indexOf(localeRegex) > -1
       done = true
   if not done
-    fs.readFile path, (err, data)->
+    gfs.readFile path, (err, data)->
       if err then throw err
       sdata = data.toString()
       sNewData = sdata
 
-      added = 0
       count = 0
       changed = false
       for word in list
         added = (sdata.match(word.Regex) or []).length
-        if word.Single and write
-          sNewData = sNewData.replace word.Regex, word.CorrectFull
-          changed = true
+        count += added
         if added > 0
-          count += added
+          if word.Single and write
+            sNewData = sNewData.replace word.Regex, word.CorrectFull
+            changed = true
           if output
             console.log word.Output
       if count then console.log "#{path},#{count},#{count/sdata.length}"

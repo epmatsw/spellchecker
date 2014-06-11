@@ -1,7 +1,8 @@
 {
-  space: true,
-  write: true,
-  output: false,
-  skipHidden: true,
-  skipLocale: false,
+  "space": true,
+  "write": true,
+  "output": false,
+  "skipHidden": true,
+  "skipLocale": false,
+  "skipLocaleRegex": false
 }
