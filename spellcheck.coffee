@@ -1,4 +1,3 @@
-gfs = require 'graceful-fs'
 fs = require 'fs'
 
 list = require './wordlist.json'
