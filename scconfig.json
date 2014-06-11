@@ -1,0 +1,7 @@
+{
+  space: true,
+  write: true,
+  output: false,
+  skipHidden: true,
+  skipLocale: false,
+}
