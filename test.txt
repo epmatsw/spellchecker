@@ -1,4 +1,4 @@
- recieve 
- teh 
- preceed 
- preceeded 
+/ receive /g
+/ the /g
+/ precede /g
+/ preceded /g
