@@ -3116,10 +3116,6 @@
     "Correct":"claims"
   },
   {
-    "Wrong":"clas",
-    "Correct":"class"
-  },
-  {
     "Wrong":"clasic",
     "Correct":"classic"
   },

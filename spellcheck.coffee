@@ -37,21 +37,20 @@ process.argv.forEach (val, index, array)->
     else if config.skipLocaleRegex and lpath.indexOf(localeRegex) > -1
       done = true
   if not done
-    gfs.readFile path, (err, data)->
-      if err then throw err
-      sdata = data.toString()
-      sNewData = sdata
+    data = fs.readFileSync path
+    sdata = data.toString()
+    sNewData = sdata
 
-      count = 0
-      changed = false
-      for word in list
-        added = (sdata.match(word.Regex) or []).length
-        count += added
-        if added > 0
-          if word.Single and write
-            sNewData = sNewData.replace word.Regex, word.CorrectFull
-            changed = true
-          if output
-            console.log word.Output
-      if count then console.log "#{path},#{count},#{count/sdata.length}"
-      if write and changed then fs.writeFile(path, sNewData)
+    count = 0
+    changed = false
+    for word in list
+      added = (sdata.match(word.Regex) or []).length
+      count += added
+      if added > 0
+        if word.Single and write
+          sNewData = sNewData.replace word.Regex, word.CorrectFull
+          changed = true
+        if output
+          console.log word.Output
+    if count then console.log "#{path},#{count},#{count/sdata.length}"
+    if write and changed then fs.writeFileSync(path, sNewData)
