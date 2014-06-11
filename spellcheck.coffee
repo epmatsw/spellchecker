@@ -12,9 +12,6 @@ space = if config.space is 'no' then '' else ' '
 output = false
 write = true
 
-snapshot = profiler.takeSnapshot 'main'
-profiler.startProfiling 'main'
-
 for word in list
   word.Regex = new RegExp "#{space}#{word.Wrong}#{space}", 'g'
   word.Output = "Found '#{word.Wrong}'. Should be '#{word.Correct}'"
@@ -24,7 +21,7 @@ for word in list
 process.argv.forEach (val, index, array)->
 
   path = "#{val}"
-  if index < 3 then done = true
+  if index < 2 then done = true
   if path.indexOf('./.') is 0 then done = true
   if path.indexOf("node_modules") > -1 then done = true
   if path.indexOf("output.csv") > -1 then done = true
@@ -47,5 +44,3 @@ process.argv.forEach (val, index, array)->
         count += added
       if count > 0 then console.log "#{path},#{count},#{count/sdata.length}"
       if write and (sNewData isnt sdata) then fs.writeFile(path, sNewData)
-
-cpuProfile = profiler.stopProfiling 'main'
