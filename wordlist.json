@@ -1296,10 +1296,6 @@
     "Correct":"apartment"
   },
   {
-    "Wrong":"apenines",
-    "Correct":"apennines-Apennines"
-  },
-  {
     "Wrong":"aplication",
     "Correct":"application"
   },
@@ -1350,10 +1346,6 @@
   {
     "Wrong":"appearences",
     "Correct":"appearances"
-  },
-  {
-    "Wrong":"appenines",
-    "Correct":"apennines-Apennines"
   },
   {
     "Wrong":"apperance",
@@ -2336,10 +2328,6 @@
     "Correct":"bergamot"
   },
   {
-    "Wrong":"Bernouilli",
-    "Correct":"Bernoulli"
-  },
-  {
     "Wrong":"beseige",
     "Correct":"besiege"
   },
@@ -2428,10 +2416,6 @@
     "Correct":"boundary"
   },
   {
-    "Wrong":"Bonnano",
-    "Correct":"Bonanno"
-  },
-  {
     "Wrong":"boook",
     "Correct":"book"
   },
@@ -2514,14 +2498,6 @@
   {
     "Wrong":"broady",
     "Correct":"broadly"
-  },
-  {
-    "Wrong":"Buddah",
-    "Correct":"Buddha"
-  },
-  {
-    "Wrong":"Buddist",
-    "Correct":"Buddhist"
   },
   {
     "Wrong":"buisness",
@@ -2624,10 +2600,6 @@
     "Correct":"calculator"
   },
   {
-    "Wrong":"Cambrige",
-    "Correct":"Cambridge"
-  },
-  {
     "Wrong":"camoflage",
     "Correct":"camouflage"
   },
@@ -2688,10 +2660,6 @@
     "Correct":"capability"
   },
   {
-    "Wrong":"Capetown",
-    "Correct":"CapeTown"
-  },
-  {
     "Wrong":"capible",
     "Correct":"capable"
   },
@@ -2717,7 +2685,7 @@
   },
   {
     "Wrong":"carcas",
-    "Correct":"carcass-Caracas"
+    "Correct":"carcass"
   },
   {
     "Wrong":"carefull",
@@ -2732,32 +2700,12 @@
     "Correct":"charismatic"
   },
   {
-    "Wrong":"Carmalite",
-    "Correct":"Carmelite"
-  },
-  {
-    "Wrong":"Carnagie",
-    "Correct":"Carnegie"
-  },
-  {
-    "Wrong":"Carnagie-Mellon",
-    "Correct":"Carnegie-Mellon"
-  },
-  {
     "Wrong":"carnege",
-    "Correct":"carnage-Carnegie"
+    "Correct":"carnage"
   },
   {
     "Wrong":"carnige",
-    "Correct":"carnage-Carnegie"
-  },
-  {
-    "Wrong":"Carnigie",
-    "Correct":"Carnegie"
-  },
-  {
-    "Wrong":"Carnigie-Mellon",
-    "Correct":"Carnegie-Mellon"
+    "Correct":"carnage"
   },
   {
     "Wrong":"carniverous",
@@ -2782,10 +2730,6 @@
   {
     "Wrong":"cartdridge",
     "Correct":"cartridge"
-  },
-  {
-    "Wrong":"Carthagian",
-    "Correct":"Carthaginian"
   },
   {
     "Wrong":"carthographer",
@@ -2854,10 +2798,6 @@
   {
     "Wrong":"catagory",
     "Correct":"category"
-  },
-  {
-    "Wrong":"Cataline",
-    "Correct":"Catiline-Catalina"
   },
   {
     "Wrong":"catapillar",
@@ -2938,10 +2878,6 @@
   {
     "Wrong":"causalities",
     "Correct":"casualties"
-  },
-  {
-    "Wrong":"Ceasar",
-    "Correct":"Caesar"
   },
   {
     "Wrong":"Celcius",
@@ -3048,10 +2984,6 @@
     "Correct":"challenge"
   },
   {
-    "Wrong":"Champange",
-    "Correct":"Champagne"
-  },
-  {
     "Wrong":"changable",
     "Correct":"changeable"
   },
@@ -3142,14 +3074,6 @@
   {
     "Wrong":"churchs",
     "Correct":"churches"
-  },
-  {
-    "Wrong":"Cincinatti",
-    "Correct":"Cincinnati"
-  },
-  {
-    "Wrong":"Cincinnatti",
-    "Correct":"Cincinnati"
   },
   {
     "Wrong":"circulaton",
@@ -4464,10 +4388,6 @@
     "Correct":"damage"
   },
   {
-    "Wrong":"Dardenelles",
-    "Correct":"Dardanelles"
-  },
-  {
     "Wrong":"daugher",
     "Correct":"daughter"
   },
@@ -5378,10 +5298,6 @@
   {
     "Wrong":"draughtman",
     "Correct":"draughtsman"
-  },
-  {
-    "Wrong":"Dravadian",
-    "Correct":"Dravidian"
   },
   {
     "Wrong":"dreasm",
@@ -6540,10 +6456,6 @@
     "Correct":"fanaticism"
   },
   {
-    "Wrong":"Farenheit",
-    "Correct":"Fahrenheit"
-  },
-  {
     "Wrong":"fatc",
     "Correct":"fact"
   },
@@ -6664,10 +6576,6 @@
     "Correct":"fled-freed"
   },
   {
-    "Wrong":"Flemmish",
-    "Correct":"Flemish"
-  },
-  {
     "Wrong":"florescent",
     "Correct":"fluorescent"
   },
@@ -6740,10 +6648,6 @@
     "Correct":"foreign"
   },
   {
-    "Wrong":"Formalhaut",
-    "Correct":"Fomalhaut"
-  },
-  {
     "Wrong":"formallize",
     "Correct":"formalize"
   },
@@ -6804,10 +6708,6 @@
     "Correct":"foundry"
   },
   {
-    "Wrong":"Foundland",
-    "Correct":"Newfoundland"
-  },
-  {
     "Wrong":"fourties",
     "Correct":"forties"
   },
@@ -6822,14 +6722,6 @@
   {
     "Wrong":"foward",
     "Correct":"forward"
-  },
-  {
-    "Wrong":"Fransiscan",
-    "Correct":"Franciscan"
-  },
-  {
-    "Wrong":"Fransiscans",
-    "Correct":"Franciscans"
   },
   {
     "Wrong":"freind",
@@ -6922,10 +6814,6 @@
   {
     "Wrong":"galatic",
     "Correct":"galactic"
-  },
-  {
-    "Wrong":"Galations",
-    "Correct":"Galatians"
   },
   {
     "Wrong":"gallaxies",
@@ -7044,10 +6932,6 @@
     "Correct":"great"
   },
   {
-    "Wrong":"Ghandi",
-    "Correct":"Gandhi"
-  },
-  {
     "Wrong":"glight",
     "Correct":"flight"
   },
@@ -7064,12 +6948,8 @@
     "Correct":"goddesses"
   },
   {
-    "Wrong":"Godounov",
-    "Correct":"Godunov"
-  },
-  {
     "Wrong":"gogin",
-    "Correct":"going-Gauguin"
+    "Correct":"going"
   },
   {
     "Wrong":"goign",
@@ -7078,14 +6958,6 @@
   {
     "Wrong":"gonig",
     "Correct":"going"
-  },
-  {
-    "Wrong":"Gothenberg",
-    "Correct":"Gothenburg"
-  },
-  {
-    "Wrong":"Gottleib",
-    "Correct":"Gottlieb"
   },
   {
     "Wrong":"gouvener",
@@ -7192,14 +7064,6 @@
     "Correct":"grow"
   },
   {
-    "Wrong":"Guaduloupe",
-    "Correct":"Guadalupe-Guadeloupe"
-  },
-  {
-    "Wrong":"Guadulupe",
-    "Correct":"Guadalupe-Guadeloupe"
-  },
-  {
     "Wrong":"guage",
     "Correct":"gauge"
   },
@@ -7236,26 +7100,6 @@
     "Correct":"guidance"
   },
   {
-    "Wrong":"Guilia",
-    "Correct":"Giulia"
-  },
-  {
-    "Wrong":"Guilio",
-    "Correct":"Giulio"
-  },
-  {
-    "Wrong":"Guiness",
-    "Correct":"Guinness"
-  },
-  {
-    "Wrong":"Guiseppe",
-    "Correct":"Giuseppe"
-  },
-  {
-    "Wrong":"gunanine",
-    "Correct":"guanine"
-  },
-  {
     "Wrong":"gurantee",
     "Correct":"guarantee"
   },
@@ -7284,14 +7128,6 @@
     "Correct":"habeas"
   },
   {
-    "Wrong":"Habsbourg",
-    "Correct":"Habsburg"
-  },
-  {
-    "Wrong":"haemorrage",
-    "Correct":"haemorrhage"
-  },
-  {
     "Wrong":"haev",
     "Correct":"have-heave"
   },
@@ -7301,7 +7137,7 @@
   },
   {
     "Wrong":"Hallowean",
-    "Correct":"Hallowe'en-Halloween"
+    "Correct":"Halloween"
   },
   {
     "Wrong":"halp",
@@ -7400,10 +7236,6 @@
     "Correct":"hasn't"
   },
   {
-    "Wrong":"Hatian",
-    "Correct":"Haitian"
-  },
-  {
     "Wrong":"haviest",
     "Correct":"heaviest"
   },
@@ -7436,10 +7268,6 @@
     "Correct":"healthy"
   },
   {
-    "Wrong":"Heidelburg",
-    "Correct":"Heidelberg"
-  },
-  {
     "Wrong":"heigher",
     "Correct":"higher"
   },
@@ -7469,7 +7297,7 @@
   },
   {
     "Wrong":"herad",
-    "Correct":"heard-Hera"
+    "Correct":"heard"
   },
   {
     "Wrong":"heridity",
@@ -7798,10 +7626,6 @@
   {
     "Wrong":"idiosyncracy",
     "Correct":"idiosyncrasy"
-  },
-  {
-    "Wrong":"Ihaca",
-    "Correct":"Ithaca"
   },
   {
     "Wrong":"illegimacy",
@@ -8704,10 +8528,6 @@
     "Correct":"isn't"
   },
   {
-    "Wrong":"Israelies",
-    "Correct":"Israelis"
-  },
-  {
     "Wrong":"issueing",
     "Correct":"issuing"
   },
@@ -8752,16 +8572,8 @@
     "Correct":"jewellery"
   },
   {
-    "Wrong":"Johanine",
-    "Correct":"Johannine"
-  },
-  {
     "Wrong":"jorunal",
     "Correct":"journal"
-  },
-  {
-    "Wrong":"Jospeh",
-    "Correct":"Joseph"
   },
   {
     "Wrong":"jouney",
@@ -8782,14 +8594,6 @@
   {
     "Wrong":"jsut",
     "Correct":"just"
-  },
-  {
-    "Wrong":"Juadaism",
-    "Correct":"Judaism"
-  },
-  {
-    "Wrong":"Juadism",
-    "Correct":"Judaism"
   },
   {
     "Wrong":"judical",
@@ -9160,10 +8964,6 @@
     "Correct":"love"
   },
   {
-    "Wrong":"Lybia",
-    "Correct":"Libya"
-  },
-  {
     "Wrong":"maching",
     "Correct":"machine-marching-matching"
   },
@@ -9234,14 +9034,6 @@
   {
     "Wrong":"makse",
     "Correct":"makes"
-  },
-  {
-    "Wrong":"Malcom",
-    "Correct":"Malcolm"
-  },
-  {
-    "Wrong":"maltesian",
-    "Correct":"Maltese"
   },
   {
     "Wrong":"mamal",
@@ -9820,10 +9612,6 @@
     "Correct":"monolithic"
   },
   {
-    "Wrong":"Monserrat",
-    "Correct":"Montserrat"
-  },
-  {
     "Wrong":"montains",
     "Correct":"mountains"
   },
@@ -9852,23 +9640,11 @@
     "Correct":"mortgage"
   },
   {
-    "Wrong":"Morisette",
-    "Correct":"Morissette"
-  },
-  {
-    "Wrong":"Morrisette",
-    "Correct":"Morissette"
-  },
-  {
     "Wrong":"morroccan",
     "Correct":"moroccan"
   },
   {
     "Wrong":"morrocco",
-    "Correct":"morocco"
-  },
-  {
-    "Wrong":"morroco",
     "Correct":"morocco"
   },
   {
@@ -9900,20 +9676,12 @@
     "Correct":"more"
   },
   {
-    "Wrong":"mucuous",
-    "Correct":"mucous"
-  },
-  {
     "Wrong":"muder",
     "Correct":"murder"
   },
   {
     "Wrong":"mudering",
     "Correct":"murdering"
-  },
-  {
-    "Wrong":"muhammadan",
-    "Correct":"muslim"
   },
   {
     "Wrong":"multicultralism",
@@ -9984,24 +9752,8 @@
     "Correct":"mysterious"
   },
   {
-    "Wrong":"Mythraic",
-    "Correct":"Mithraic"
-  },
-  {
     "Wrong":"naieve",
     "Correct":"naive"
-  },
-  {
-    "Wrong":"Naploeon",
-    "Correct":"Napoleon"
-  },
-  {
-    "Wrong":"Napolean",
-    "Correct":"Napoleon"
-  },
-  {
-    "Wrong":"Napoleonian",
-    "Correct":"Napoleonic"
   },
   {
     "Wrong":"naturaly",
@@ -10018,10 +9770,6 @@
   {
     "Wrong":"naturually",
     "Correct":"naturally"
-  },
-  {
-    "Wrong":"Nazereth",
-    "Correct":"Nazareth"
   },
   {
     "Wrong":"neccesarily",
@@ -10272,16 +10020,8 @@
     "Correct":"nuisance"
   },
   {
-    "Wrong":"Nullabour",
-    "Correct":"Nullarbor"
-  },
-  {
     "Wrong":"numberous",
     "Correct":"numerous"
-  },
-  {
-    "Wrong":"Nuremburg",
-    "Correct":"Nuremberg"
   },
   {
     "Wrong":"nusance",
@@ -10808,18 +10548,6 @@
     "Correct":"parliamentarian"
   },
   {
-    "Wrong":"Palistian",
-    "Correct":"Palestinian"
-  },
-  {
-    "Wrong":"Palistinian",
-    "Correct":"Palestinian"
-  },
-  {
-    "Wrong":"Palistinians",
-    "Correct":"Palestinians"
-  },
-  {
     "Wrong":"pallete",
     "Correct":"palette"
   },
@@ -10834,10 +10562,6 @@
   {
     "Wrong":"pantomine",
     "Correct":"pantomime"
-  },
-  {
-    "Wrong":"Papanicalou",
-    "Correct":"Papanicolaou"
   },
   {
     "Wrong":"paralel",
@@ -11002,10 +10726,6 @@
   {
     "Wrong":"peice",
     "Correct":"piece"
-  },
-  {
-    "Wrong":"Peloponnes",
-    "Correct":"Peloponnesus"
   },
   {
     "Wrong":"penatly",
@@ -11232,10 +10952,6 @@
     "Correct":"petition"
   },
   {
-    "Wrong":"Pharoah",
-    "Correct":"Pharaoh"
-  },
-  {
     "Wrong":"phenomenom",
     "Correct":"phenomenon"
   },
@@ -11260,10 +10976,6 @@
     "Correct":"phenomena"
   },
   {
-    "Wrong":"Philipines",
-    "Correct":"Philippines"
-  },
-  {
     "Wrong":"philisopher",
     "Correct":"philosopher"
   },
@@ -11274,18 +10986,6 @@
   {
     "Wrong":"philisophy",
     "Correct":"philosophy"
-  },
-  {
-    "Wrong":"Phillipine",
-    "Correct":"Philippine"
-  },
-  {
-    "Wrong":"Phillipines",
-    "Correct":"Philippines"
-  },
-  {
-    "Wrong":"Phillippines",
-    "Correct":"Philippines"
   },
   {
     "Wrong":"phillosophically",
@@ -11302,10 +11002,6 @@
   {
     "Wrong":"philosphy",
     "Correct":"philosophy"
-  },
-  {
-    "Wrong":"Phonecian",
-    "Correct":"Phoenecian"
   },
   {
     "Wrong":"phongraph",
@@ -11612,10 +11308,6 @@
     "Correct":"position"
   },
   {
-    "Wrong":"Postdam",
-    "Correct":"Potsdam"
-  },
-  {
     "Wrong":"posthomous",
     "Correct":"posthumous"
   },
@@ -11806,10 +11498,6 @@
   {
     "Wrong":"premission",
     "Correct":"permission"
-  },
-  {
-    "Wrong":"Premonasterians",
-    "Correct":"Premonstratensians"
   },
   {
     "Wrong":"preocupation",
@@ -12412,18 +12100,6 @@
     "Correct":"purchasing"
   },
   {
-    "Wrong":"Pucini",
-    "Correct":"Puccini"
-  },
-  {
-    "Wrong":"Puertorrican",
-    "Correct":"PuertoRican"
-  },
-  {
-    "Wrong":"Puertorricans",
-    "Correct":"PuertoRicans"
-  },
-  {
     "Wrong":"pulisher",
     "Correct":"publisher"
   },
@@ -12490,10 +12166,6 @@
   {
     "Wrong":"quarantaine",
     "Correct":"quarantine"
-  },
-  {
-    "Wrong":"Queenland",
-    "Correct":"Queensland"
   },
   {
     "Wrong":"questonable",
@@ -13572,10 +13244,6 @@
     "Correct":"rose"
   },
   {
-    "Wrong":"Rockerfeller",
-    "Correct":"Rockefeller"
-  },
-  {
     "Wrong":"rococco",
     "Correct":"rococo"
   },
@@ -13652,10 +13320,6 @@
     "Correct":"sacrilegious"
   },
   {
-    "Wrong":"Sacremento",
-    "Correct":"Sacramento"
-  },
-  {
     "Wrong":"sacrifical",
     "Correct":"sacrificial"
   },
@@ -13678,10 +13342,6 @@
   {
     "Wrong":"sandwhich",
     "Correct":"sandwich"
-  },
-  {
-    "Wrong":"Sanhedrim",
-    "Correct":"Sanhedrin"
   },
   {
     "Wrong":"santioned",
@@ -14158,22 +13818,6 @@
   {
     "Wrong":"sinse",
     "Correct":"sines-since"
-  },
-  {
-    "Wrong":"Sionist",
-    "Correct":"Zionist"
-  },
-  {
-    "Wrong":"Sionists",
-    "Correct":"Zionists"
-  },
-  {
-    "Wrong":"Sixtin",
-    "Correct":"Sistine"
-  },
-  {
-    "Wrong":"Skagerak",
-    "Correct":"Skagerrak"
   },
   {
     "Wrong":"skateing",
@@ -15700,10 +15344,6 @@
     "Correct":"tolerance"
   },
   {
-    "Wrong":"Tolkein",
-    "Correct":"Tolkien"
-  },
-  {
     "Wrong":"tomatos",
     "Correct":"tomatoes"
   },
@@ -15908,10 +15548,6 @@
     "Correct":"turnkey-trunk"
   },
   {
-    "Wrong":"Tuscon",
-    "Correct":"Tucson"
-  },
-  {
     "Wrong":"tust",
     "Correct":"trust"
   },
@@ -15970,10 +15606,6 @@
   {
     "Wrong":"uise",
     "Correct":"use"
-  },
-  {
-    "Wrong":"Ukranian",
-    "Correct":"Ukrainian"
   },
   {
     "Wrong":"ultimely",
@@ -16132,8 +15764,8 @@
     "Correct":"uninterrupted"
   },
   {
-    "Wrong":"UnitesStates",
-    "Correct":"UnitedStates"
+    "Wrong":"Unites States",
+    "Correct":"United States"
   },
   {
     "Wrong":"univeral",
@@ -16994,10 +16626,6 @@
   {
     "Wrong":"yeilding",
     "Correct":"yielding"
-  },
-  {
-    "Wrong":"Yementite",
-    "Correct":"Yemenite-Yemeni"
   },
   {
     "Wrong":"yera",
