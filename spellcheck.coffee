@@ -34,13 +34,16 @@ process.argv.forEach (val, index, array)->
       sNewData = sdata
 
       added = 0
+      count = 0
+      changed = false
       for word in list
-        count = 0
         added = (sdata.match(word.Regex) or []).length
         if word.Single and write
           sNewData = sNewData.replace word.Regex, word.CorrectFull
-        if output and added > 0
-          console.log word.Output
-        count += added
-      if count > 0 then console.log "#{path},#{count},#{count/sdata.length}"
-      if write and (sNewData isnt sdata) then fs.writeFile(path, sNewData)
+          changed = true
+        if added > 0
+          count += added
+          if output
+            console.log word.Output
+      if count then console.log "#{path},#{count},#{count/sdata.length}"
+      if write and changed then fs.writeFile(path, sNewData)
