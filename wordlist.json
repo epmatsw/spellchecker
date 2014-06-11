@@ -29,15 +29,15 @@
   },
   {
     "Wrong":"abouta",
-    "Correct":"abouta"
+    "Correct":"about a"
   },
   {
     "Wrong":"aboutit",
-    "Correct":"aboutit"
+    "Correct":"about it"
   },
   {
     "Wrong":"aboutthe",
-    "Correct":"aboutthe"
+    "Correct":"about the"
   },
   {
     "Wrong":"abscence",
@@ -1281,7 +1281,7 @@
   },
   {
     "Wrong":"anyother",
-    "Correct":"anyother"
+    "Correct":"any other"
   },
   {
     "Wrong":"anytying",
@@ -1685,7 +1685,7 @@
   },
   {
     "Wrong":"asfar",
-    "Correct":"asfar"
+    "Correct":"as far"
   },
   {
     "Wrong":"asign",
@@ -1829,7 +1829,7 @@
   },
   {
     "Wrong":"aswell",
-    "Correct":"aswell"
+    "Correct":"as well"
   },
   {
     "Wrong":"atain",
@@ -3557,7 +3557,7 @@
   },
   {
     "Wrong":"completedthe",
-    "Correct":"completedthe"
+    "Correct":"completed the"
   },
   {
     "Wrong":"completelyl",
@@ -3653,7 +3653,7 @@
   },
   {
     "Wrong":"conditionsof",
-    "Correct":"conditionsof"
+    "Correct":"conditions of"
   },
   {
     "Wrong":"conected",
@@ -5997,7 +5997,7 @@
   },
   {
     "Wrong":"eventhough",
-    "Correct":"eventhough"
+    "Correct":"even though"
   },
   {
     "Wrong":"eventially",
@@ -6013,7 +6013,7 @@
   },
   {
     "Wrong":"everytime",
-    "Correct":"everytime"
+    "Correct":"every time"
   },
   {
     "Wrong":"everyting",
@@ -7408,20 +7408,12 @@
     "Correct":"historians"
   },
   {
-    "Wrong":"hitsingles",
-    "Correct":"hitsingles"
-  },
-  {
     "Wrong":"holf",
     "Correct":"hold"
   },
   {
     "Wrong":"holliday",
     "Correct":"holiday"
-  },
-  {
-    "Wrong":"homestate",
-    "Correct":"homestate"
   },
   {
     "Wrong":"homogeneize",
@@ -8848,24 +8840,8 @@
     "Correct":"lifetime"
   },
   {
-    "Wrong":"lightyear",
-    "Correct":"lightyear"
-  },
-  {
-    "Wrong":"lightyears",
-    "Correct":"lightyears"
-  },
-  {
     "Wrong":"likelyhood",
     "Correct":"likelihood"
-  },
-  {
-    "Wrong":"linnaena",
-    "Correct":"linnaean"
-  },
-  {
-    "Wrong":"lippizaner",
-    "Correct":"lipizzaner"
   },
   {
     "Wrong":"liquify",
@@ -9166,10 +9142,6 @@
   {
     "Wrong":"Massachussetts",
     "Correct":"Massachusetts"
-  },
-  {
-    "Wrong":"massmedia",
-    "Correct":"massmedia"
   },
   {
     "Wrong":"masterbation",
@@ -9929,7 +9901,7 @@
   },
   {
     "Wrong":"noone",
-    "Correct":"noone"
+    "Correct":"no one"
   },
   {
     "Wrong":"norhern",
@@ -10497,7 +10469,7 @@
   },
   {
     "Wrong":"overthere",
-    "Correct":"overthere"
+    "Correct":"over there"
   },
   {
     "Wrong":"overwelming",
@@ -10702,10 +10674,6 @@
   {
     "Wrong":"pbulisher",
     "Correct":"publisher"
-  },
-  {
-    "Wrong":"peacefuland",
-    "Correct":"peacefuland"
   },
   {
     "Wrong":"peageant",
@@ -12305,7 +12273,7 @@
   },
   {
     "Wrong":"receivedfrom",
-    "Correct":"receivedfrom"
+    "Correct":"received from"
   },
   {
     "Wrong":"recepient",
@@ -12450,10 +12418,6 @@
   {
     "Wrong":"recontructed",
     "Correct":"reconstructed"
-  },
-  {
-    "Wrong":"recordproducer",
-    "Correct":"recordproducer"
   },
   {
     "Wrong":"recquired",
@@ -13681,7 +13645,7 @@
   },
   {
     "Wrong":"shortwhile",
-    "Correct":"shortwhile"
+    "Correct":"short while"
   },
   {
     "Wrong":"shoudl",
@@ -15064,10 +15028,6 @@
     "Correct":"tendency"
   },
   {
-    "Wrong":"tennisplayer",
-    "Correct":"tennisplayer"
-  },
-  {
     "Wrong":"tepmorarily",
     "Correct":"temporarily"
   },
@@ -15381,7 +15341,7 @@
   },
   {
     "Wrong":"tothe",
-    "Correct":"tothe"
+    "Correct":"to the"
   },
   {
     "Wrong":"toubles",
@@ -15993,7 +15953,7 @@
   },
   {
     "Wrong":"upto",
-    "Correct":"upto"
+    "Correct":"up to"
   },
   {
     "Wrong":"usally",
