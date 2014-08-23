@@ -5,13 +5,10 @@ list = require './wordlist.json'
 
 config = require './scconfig.json'
 
+exec = require('child_process').exec
+
 space = if config.space then ' ' else ''
-output = config.output
-write = config.write
 localeRegex = if config.skipLocaleRegex then new RegExp('[a-z][a-z]-[A-Z][A-Z]', 'g') else null
-skipUpto = config.skipUpto
-skipContractions = config.skipContractions
-lightMode = config.lightMode
 
 isPathGood = (path)->
   if config.skipHidden and path.indexOf('./.') is 0 then return false
@@ -33,8 +30,8 @@ passesLocaleChecks = (path)->
 
 buildWordList = ()->
   for word in list
-    if skipUpto and word.Wrong.toLowerCase() is "upto" then continue
-    if skipContractions and word.Correct.indexOf("'") isnt -1 then continue
+    if config.skipUpto and word.Wrong.toLowerCase() is "upto" then continue
+    if config.skipContractions and word.Correct.indexOf("'") isnt -1 then continue
     word.Regex = new RegExp "#{space}#{word.Wrong}#{space}", 'g'
     word.Output = "'#{word.Wrong}' should be '#{word.Correct}'"
     word.Single = word.Correct.indexOf('-') is -1
@@ -47,9 +44,7 @@ search = (path)->
   if not isPathGood lpath then return
   if not passesLocaleChecks lpath then return
 
-  data = fs.readFileSync path
-  sdata = data.toString()
-  sNewData = sdata
+  data = fs.readFileSync path, config.encoding
 
   count = 0
   changed = false
@@ -58,13 +53,13 @@ search = (path)->
     added = (sdata.match(word.Regex) or []).length
     count += added
     if added > 0
-      if word.Single and write
-        sNewData = sNewData.replace word.Regex, word.CorrectFull
+      if word.Single and config.write
+        data = data.replace word.Regex, word.CorrectFull
         changed = true
-      if output
+      if config.output
         console.log word.Output
   if count then console.log "#{path},#{count},#{count/sdata.length}"
-  if write and changed then fs.writeFileSync(path, sNewData)
+  if config.write and changed then fs.writeFileSync path, data, config.encoding
   return
 
 quickSearch = (path)->
@@ -73,14 +68,11 @@ quickSearch = (path)->
   if not isPathGood lpath then return
   if not passesLocaleChecks lpath then return
 
-  data = fs.readFileSync path
-  sdata = data.toString()
-  sNewData = sdata
+  data = fs.readFileSync path, config.encoding
 
-  for word in list
-    if word.Regex isnt undefined and word.Single
-      sNewData = sNewData.replace word.Regex, word.CorrectFull
-  fs.writeFileSync(path, sNewData)
+  for word in list when word.Regex isnt undefined and word.Single
+    data = data.replace word.Regex, word.CorrectFull
+  fs.writeFileSync path, data, config.encoding
   console.log path
   return
 
@@ -90,4 +82,4 @@ index = -1
 for path in process.argv
   index += 1
   if index < 2 then continue
-  if lightMode then quickSearch "#{path}" else search "#{path}"
+  if config.lightMode then quickSearch "#{path}" else search "#{path}"

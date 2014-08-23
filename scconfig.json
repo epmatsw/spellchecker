@@ -7,5 +7,6 @@
   "skipLocaleRegex": false,
   "skipUpto": true,
   "skipContractions": true,
-  "lightMode": true
+  "lightMode": true,
+  "encoding": "ascii"
 }
