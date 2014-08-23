@@ -32,10 +32,11 @@ buildWordList = ()->
   for word in list
     if config.skipUpto and word.Wrong.toLowerCase() is "upto" then continue
     if config.skipContractions and word.Correct.indexOf("'") isnt -1 then continue
-    word.Regex = new RegExp "#{space}#{word.Wrong}#{space}", 'g'
+    if not config.lightMode then word.Regex = new RegExp "#{space}#{word.Wrong}#{space}", 'g'
     word.Output = "'#{word.Wrong}' should be '#{word.Correct}'"
     word.Single = word.Correct.indexOf('-') is -1
     word.CorrectFull = "#{space}#{word.Correct}#{space}"
+    word.WrongFull = "#{space}#{word.Wrong}#{space}"
 
 search = (path)->
 
@@ -69,11 +70,15 @@ quickSearch = (path)->
   if not passesLocaleChecks lpath then return
 
   data = fs.readFileSync path, config.encoding
+  changed = false
 
-  for word in list when word.Regex isnt undefined and word.Single
-    data = data.replace word.Regex, word.CorrectFull
-  fs.writeFileSync path, data, config.encoding
-  console.log path
+  for word in list when word.Single
+    if data.indexOf(word.WrongFull) isnt -1
+      data = data.replace word.WrongFull, word.CorrectFull
+      changed = true
+  if changed
+    fs.writeFileSync path, data, config.encoding
+    console.log path
   return
 
 buildWordList()
