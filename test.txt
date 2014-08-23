@@ -1,4 +1,0 @@
-/ receive /g
-/ the /g
-/ precede /g
-/ preceded /g
