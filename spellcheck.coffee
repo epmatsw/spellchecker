@@ -1,3 +1,4 @@
+
 fs = require 'fs'
 
 list = require './wordlist.json'
@@ -63,7 +64,26 @@ search = (path)->
         console.log word.Output
   if count then console.log "#{path},#{count},#{count/sdata.length}"
   if write and changed then fs.writeFileSync(path, sNewData)
+  return
 
+quickSearch = (path)->
+  lpath = path.toLowerCase()
+
+  if not isPathGood lpath then return
+  if not passesLocaleChecks lpath then return
+
+  data = fs.readFileSync path
+  sdata = data.toString()
+  sNewData = sdata
+
+  for word in list
+    if word.Regex is undefined then continue
+    added = (sdata.match(word.Regex) or []).length
+    if added > 0 and word.Single
+      sNewData = sNewData.replace word.Regex, word.CorrectFull
+      fs.writeFileSync(path, sNewData)
+      console.log path
+  return
 
 buildWordList()
 
@@ -71,4 +91,4 @@ index = -1
 for path in process.argv
   index += 1
   if index < 2 then continue
-  search "#{path}"
+  quickSearch "#{path}"
