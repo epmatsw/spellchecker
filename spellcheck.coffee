@@ -75,10 +75,10 @@ quickSearch = (path)->
   for word in list when word.Single
     if data.indexOf(word.WrongFull) isnt -1
       data = data.replace word.WrongFull, word.CorrectFull
+      console.log "#{path} - #{word.Wrong} to #{word.Correct}"
       changed = true
   if changed
     fs.writeFileSync path, data, config.encoding
-    console.log path
   return
 
 buildWordList()
