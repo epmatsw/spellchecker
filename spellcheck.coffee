@@ -11,6 +11,7 @@ write = config.write
 localeRegex = if config.skipLocaleRegex then new RegExp('[a-z][a-z]-[A-Z][A-Z]', 'g') else null
 skipUpto = config.skipUpto
 skipContractions = config.skipContractions
+lightMode = config.lightMode
 
 isPathGood = (path)->
   if config.skipHidden and path.indexOf('./.') is 0 then return false
@@ -77,12 +78,10 @@ quickSearch = (path)->
   sNewData = sdata
 
   for word in list
-    if word.Regex is undefined then continue
-    added = (sdata.match(word.Regex) or []).length
-    if added > 0 and word.Single
+    if word.Regex isnt undefined and word.Single
       sNewData = sNewData.replace word.Regex, word.CorrectFull
-      fs.writeFileSync(path, sNewData)
-      console.log path
+  fs.writeFileSync(path, sNewData)
+  console.log path
   return
 
 buildWordList()
@@ -91,4 +90,4 @@ index = -1
 for path in process.argv
   index += 1
   if index < 2 then continue
-  quickSearch "#{path}"
+  if lightMode then quickSearch "#{path}" else search "#{path}"

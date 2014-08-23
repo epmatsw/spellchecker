@@ -6,5 +6,6 @@
   "skipLocale": false,
   "skipLocaleRegex": false,
   "skipUpto": true,
-  "skipContractions": true
+  "skipContractions": true,
+  "lightMode": true
 }
