@@ -4,5 +4,7 @@
   "output": false,
   "skipHidden": true,
   "skipLocale": false,
-  "skipLocaleRegex": false
+  "skipLocaleRegex": false,
+  "skipUpto": true,
+  "skipContractions": true
 }
