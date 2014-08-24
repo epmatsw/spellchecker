@@ -1,12 +1,7 @@
 {
-  "space": true,
-  "write": true,
-  "output": false,
+  "space": ' ',
   "skipHidden": true,
-  "skipLocale": false,
-  "skipLocaleRegex": false,
   "skipUpto": true,
   "skipContractions": true,
-  "lightMode": true,
   "encoding": "ascii"
 }
